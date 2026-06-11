@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Adventurer
+class.adventurer.flavor = A jack of all trades, bound to none.
+class.adventurer.desc = The default class. No specialization, no restrictions, no bonuses. Pick this when you want to play the game without committing to a path.
+class.hunter.name = Hunter
+class.hunter.flavor = Patient. Precise. Lethal.
+class.hunter.desc = A tracker and finisher. Bow and dagger primary, with strong gathering ties to woodcutting and harvesting. Staves and magic are foreign to the hunter's craft.
+class.warrior.name = Warrior
+class.warrior.flavor = Steel and discipline.
+class.warrior.desc = A frontline melee fighter. Bonuses to every weapon class except staves and magic; the arcane arts are forbidden, your training was steel not spell.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = Wanderer's Pact
+class.adventurer.initiate.flavor = You've taken the first steps. The road is long.
+class.adventurer.adept.name = Seasoned Traveler
+class.adventurer.adept.flavor = Mountains crossed, rivers forded. The world begins to know you.
+class.adventurer.master.name = Master Adventurer
+class.adventurer.master.flavor = Few paths remain that you have not walked.
+class.hunter.initiate.name = Hunter Initiate
+class.hunter.initiate.flavor = You've learned to wait.
+class.hunter.adept.name = Hunter Adept
+class.hunter.adept.flavor = Every shot is chosen.
+class.hunter.master.name = Master Hunter
+class.hunter.master.flavor = Nothing moves unseen.
+class.warrior.initiate.name = Warrior Initiate
+class.warrior.initiate.flavor = First taste of steel.
+class.warrior.adept.name = Warrior Adept
+class.warrior.adept.flavor = Steady stance, sharp eye.
+class.warrior.master.name = Warrior Master
+class.warrior.master.flavor = The blade is an extension of the will.

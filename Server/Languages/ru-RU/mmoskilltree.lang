@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Искатель приключений
+class.adventurer.flavor = Мастер на все руки, не связанный ничем.
+class.adventurer.desc = Класс по умолчанию. Без специализации, без ограничений, без бонусов. Выберите его, если хотите играть, не связывая себя одним путём.
+class.hunter.name = Охотник
+class.hunter.flavor = Терпеливый. Точный. Смертоносный.
+class.hunter.desc = Следопыт и добивающий. Основное оружие - лук и кинжал, с сильной связью со сбором ресурсов: рубкой леса и сбором урожая. Посохи и магия чужды ремеслу охотника.
+class.warrior.name = Воин
+class.warrior.flavor = Сталь и дисциплина.
+class.warrior.desc = Боец ближнего боя на передовой. Бонусы ко всем классам оружия, кроме посохов и магии; тайные искусства под запретом, ваша выучка - сталь, а не заклинания.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = Пакт странника
+class.adventurer.initiate.flavor = Вы сделали первые шаги. Дорога длинна.
+class.adventurer.adept.name = Бывалый путник
+class.adventurer.adept.flavor = Горы перейдены, реки преодолены вброд. Мир начинает узнавать вас.
+class.adventurer.master.name = Мастер приключений
+class.adventurer.master.flavor = Осталось мало троп, по которым вы не прошли.
+class.hunter.initiate.name = Посвящённый охотник
+class.hunter.initiate.flavor = Вы научились ждать.
+class.hunter.adept.name = Охотник-адепт
+class.hunter.adept.flavor = Каждый выстрел выверен.
+class.hunter.master.name = Мастер-охотник
+class.hunter.master.flavor = Ничто не движется незамеченным.
+class.warrior.initiate.name = Посвящённый воин
+class.warrior.initiate.flavor = Первый вкус стали.
+class.warrior.adept.name = Воин-адепт
+class.warrior.adept.flavor = Твёрдая стойка, острый глаз.
+class.warrior.master.name = Мастер-воин
+class.warrior.master.flavor = Клинок - продолжение воли.

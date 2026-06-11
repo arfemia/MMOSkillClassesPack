@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Aventurier
+class.adventurer.flavor = Un touche-à-tout, qui ne s'attache à rien.
+class.adventurer.desc = La classe par défaut. Aucune spécialisation, aucune restriction, aucun bonus. Choisissez-la pour jouer sans vous engager sur une voie.
+class.hunter.name = Chasseur
+class.hunter.flavor = Patient. Précis. Mortel.
+class.hunter.desc = Un pisteur et un finisseur. Arc et dague en armes principales, avec de forts liens de récolte avec le bûcheronnage et la récolte. Les bâtons et la magie sont étrangers à l'art du chasseur.
+class.warrior.name = Guerrier
+class.warrior.flavor = L'acier et la discipline.
+class.warrior.desc = Un combattant de mêlée en première ligne. Des bonus pour toutes les classes d'armes sauf les bâtons et la magie ; les arts arcaniques sont interdits, votre entraînement fut d'acier, pas de sortilèges.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = Pacte du vagabond
+class.adventurer.initiate.flavor = Vous avez fait les premiers pas. La route est longue.
+class.adventurer.adept.name = Voyageur aguerri
+class.adventurer.adept.flavor = Des montagnes franchies, des rivières passées à gué. Le monde commence à vous connaître.
+class.adventurer.master.name = Maître aventurier
+class.adventurer.master.flavor = Il reste peu de chemins que vous n'ayez pas parcourus.
+class.hunter.initiate.name = Initié chasseur
+class.hunter.initiate.flavor = Vous avez appris à attendre.
+class.hunter.adept.name = Adepte chasseur
+class.hunter.adept.flavor = Chaque tir est choisi.
+class.hunter.master.name = Maître chasseur
+class.hunter.master.flavor = Rien ne bouge sans être vu.
+class.warrior.initiate.name = Initié guerrier
+class.warrior.initiate.flavor = Premier goût de l'acier.
+class.warrior.adept.name = Adepte guerrier
+class.warrior.adept.flavor = Posture stable, œil affûté.
+class.warrior.master.name = Maître guerrier
+class.warrior.master.flavor = La lame est un prolongement de la volonté.

@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Abenteurer
+class.adventurer.flavor = Von allem ein bisschen, an nichts gebunden.
+class.adventurer.desc = Die Standardklasse. Keine Spezialisierung, keine Einschränkungen, keine Boni. Wähle sie, wenn du das Spiel spielen willst, ohne dich auf einen Pfad festzulegen.
+class.hunter.name = Jäger
+class.hunter.flavor = Geduldig. Präzise. Tödlich.
+class.hunter.desc = Ein Fährtenleser und Vollstrecker. Bogen und Dolch als Hauptwaffen, mit starken Sammelbezügen zu Holzfällen und Ernte. Stäbe und Magie sind dem Handwerk des Jägers fremd.
+class.warrior.name = Krieger
+class.warrior.flavor = Stahl und Disziplin.
+class.warrior.desc = Ein Nahkämpfer an vorderster Front. Boni auf jede Waffengattung außer Stäben und Magie; die arkanen Künste sind verboten, deine Ausbildung war Stahl, nicht Zauber.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = Pakt des Wanderers
+class.adventurer.initiate.flavor = Du hast die ersten Schritte getan. Der Weg ist lang.
+class.adventurer.adept.name = Erfahrener Reisender
+class.adventurer.adept.flavor = Berge überquert, Flüsse durchwatet. Die Welt beginnt, dich zu kennen.
+class.adventurer.master.name = Meisterabenteurer
+class.adventurer.master.flavor = Nur wenige Pfade bleiben, die du noch nicht gegangen bist.
+class.hunter.initiate.name = Jäger-Initiat
+class.hunter.initiate.flavor = Du hast gelernt zu warten.
+class.hunter.adept.name = Jäger-Adept
+class.hunter.adept.flavor = Jeder Schuss ist gewählt.
+class.hunter.master.name = Meisterjäger
+class.hunter.master.flavor = Nichts bewegt sich ungesehen.
+class.warrior.initiate.name = Krieger-Initiat
+class.warrior.initiate.flavor = Der erste Geschmack von Stahl.
+class.warrior.adept.name = Krieger-Adept
+class.warrior.adept.flavor = Fester Stand, scharfes Auge.
+class.warrior.master.name = Kriegermeister
+class.warrior.master.flavor = Die Klinge ist eine Verlängerung des Willens.

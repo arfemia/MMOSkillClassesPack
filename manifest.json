@@ -2,7 +2,7 @@
   "Group": "Ziggfreed",
   "Name": "MMOSkillClassesPack",
   "Version": "1.0.0",
-  "Description": "MMO Skill Tree — class identity system. Three free baseline classes (Adventurer, Warrior, Hunter) built on the ClassStandard template. Required for the class feature.",
+  "Description": "MMO Skill Tree - class identity system. Three free baseline classes (Adventurer, Warrior, Hunter) built on the ClassStandard template. Required for the class feature.",
   "Authors": [
     {
       "Name": "ZiggFreed"

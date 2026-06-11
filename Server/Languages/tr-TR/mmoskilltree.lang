@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Maceracı
+class.adventurer.flavor = Her işten anlar, hiçbirine bağlanmaz.
+class.adventurer.desc = Varsayılan sınıf. Uzmanlaşma yok, kısıtlama yok, bonus yok. Bir yola bağlanmadan oynamak istiyorsan bunu seç.
+class.hunter.name = Avcı
+class.hunter.flavor = Sabırlı. İsabetli. Ölümcül.
+class.hunter.desc = Bir iz sürücü ve bitirici. Ana silahları yay ve hançer; Odunculuk ve Hasat ile güçlü toplayıcılık bağları var. Asalar ve büyü, avcının zanaatına yabancıdır.
+class.warrior.name = Savaşçı
+class.warrior.flavor = Çelik ve disiplin.
+class.warrior.desc = Ön saflarda dövüşen bir yakın dövüşçü. Asalar ve büyü dışındaki tüm silah sınıflarına bonus; gizli sanatlar yasaktır, eğitimin büyüyle değil çelikle oldu.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = Gezginin Andı
+class.adventurer.initiate.flavor = İlk adımları attın. Yol uzun.
+class.adventurer.adept.name = Görmüş Geçirmiş Gezgin
+class.adventurer.adept.flavor = Dağlar aşıldı, nehirler geçildi. Dünya seni tanımaya başlıyor.
+class.adventurer.master.name = Usta Maceracı
+class.adventurer.master.flavor = Yürümediğin pek az yol kaldı.
+class.hunter.initiate.name = Avcı Adayı
+class.hunter.initiate.flavor = Beklemeyi öğrendin.
+class.hunter.adept.name = Uzman Avcı
+class.hunter.adept.flavor = Her atış özenle seçilir.
+class.hunter.master.name = Usta Avcı
+class.hunter.master.flavor = Hiçbir şey görülmeden kıpırdayamaz.
+class.warrior.initiate.name = Savaşçı Adayı
+class.warrior.initiate.flavor = Çeliğin ilk tadı.
+class.warrior.adept.name = Uzman Savaşçı
+class.warrior.adept.flavor = Sağlam duruş, keskin göz.
+class.warrior.master.name = Usta Savaşçı
+class.warrior.master.flavor = Kılıç, iradenin bir uzantısıdır.

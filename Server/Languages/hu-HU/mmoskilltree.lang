@@ -1,0 +1,36 @@
+# MMOSkillClassesPack - class names, flavor, descriptions, and advancement rank text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.<key> and the mod resolves it by convention (class.<id>.name / .flavor / .desc,
+# class.<classId>.<advancementId>.name / .flavor). Add a <locale>/mmoskilltree.lang with
+# the same keys to translate; missing keys fall back to English per key.
+
+# --- Classes (class.<id>.name / .flavor / .desc, resolved by convention; id = filename lowercased) ---
+class.adventurer.name = Kalandor
+class.adventurer.flavor = Mindenhez ért egy kicsit, semmihez sem kötődik.
+class.adventurer.desc = Az alapértelmezett kaszt. Nincs specializáció, nincsenek korlátozások, nincsenek bónuszok. Ezt válaszd, ha úgy akarsz játszani, hogy nem kötelezed el magad egyetlen út mellett sem.
+class.hunter.name = Vadász
+class.hunter.flavor = Türelmes. Pontos. Halálos.
+class.hunter.desc = Nyomkereső és bevégző. Elsősorban íjjal és tőrrel harcol, erős gyűjtögető kötődéssel a Favágáshoz és az Aratáshoz. A botok és a mágia idegenek a vadász mesterségétől.
+class.warrior.name = Harcos
+class.warrior.flavor = Acél és fegyelem.
+class.warrior.desc = Frontvonalbeli közelharcos. Bónusz minden fegyvertípusra a botok és a mágia kivételével; az arkán művészetek tiltottak, a kiképzésed acélból volt, nem varázslatból.
+
+# --- Advancement ranks (class.<classId>.<advancementId>.name / .flavor; ids from the ClassStandard template) ---
+class.adventurer.initiate.name = A Vándor Fogadalma
+class.adventurer.initiate.flavor = Megtetted az első lépéseket. Az út hosszú.
+class.adventurer.adept.name = Tapasztalt Utazó
+class.adventurer.adept.flavor = Hegyeken keltél át, folyókon gázoltál. A világ kezd megismerni.
+class.adventurer.master.name = Mesterkalandor
+class.adventurer.master.flavor = Kevés olyan ösvény maradt, amelyet még nem jártál be.
+class.hunter.initiate.name = Beavatott Vadász
+class.hunter.initiate.flavor = Megtanultál várni.
+class.hunter.adept.name = Avatott Vadász
+class.hunter.adept.flavor = Minden lövésed megfontolt.
+class.hunter.master.name = Mestervadász
+class.hunter.master.flavor = Semmi sem mozdul észrevétlenül.
+class.warrior.initiate.name = Beavatott Harcos
+class.warrior.initiate.flavor = Az acél első íze.
+class.warrior.adept.name = Avatott Harcos
+class.warrior.adept.flavor = Szilárd tartás, éles szem.
+class.warrior.master.name = Harcos Mester
+class.warrior.master.flavor = A penge az akarat meghosszabbítása.

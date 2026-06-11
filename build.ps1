@@ -27,7 +27,7 @@ $ExtraExcludeDirs  = @()        # extra top-level dir names (at the pack root) t
 $pack = $PSScriptRoot
 $zipPath = Join-Path $pack $ZipName
 $excludeNames = @($ZipName, 'README.md', 'CURSEFORGE.md', 'CLAUDE.md', 'LICENSE', '.gitignore', 'build.ps1') + $ExtraExcludeNames
-$excludeDirs  = @('.git', '.github') + $ExtraExcludeDirs
+$excludeDirs  = @('.git', '.github', 'patch-notes') + $ExtraExcludeDirs
 
 Remove-Item $zipPath -ErrorAction SilentlyContinue
 try { Add-Type -AssemblyName 'System.IO.Compression.FileSystem' -ErrorAction Stop } catch { }

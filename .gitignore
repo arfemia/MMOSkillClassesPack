@@ -1,0 +1,4 @@
+# Built pack artifact + OS/editor junk
+*.zip
+Thumbs.db
+.DS_Store

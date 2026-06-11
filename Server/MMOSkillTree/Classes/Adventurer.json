@@ -1,0 +1,30 @@
+{
+  "Name": "Adventurer",
+  "Payload": {
+    "extends": "classstandard",
+    "params": {
+      "displayName": "Adventurer",
+      "flavor": "A jack of all trades, bound to none.",
+      "description": "The default class. No specialization, no restrictions, no bonuses. Pick this when you want to play the game without committing to a path.",
+      "icon": "Tool_Hatchet_Crude",
+      "color": "#44cc77",
+      "initiateName": "Wanderer's Pact",
+      "initiateFlavor": "You've taken the first steps. The road is long.",
+      "adeptName": "Seasoned Traveler",
+      "adeptFlavor": "Mountains crossed, rivers forded. The world begins to know you.",
+      "masterName": "Master Adventurer",
+      "masterFlavor": "Few paths remain that you have not walked."
+    },
+    "advancementOverrides": {
+      "initiate": {
+        "requirements": { "totalLevel": 50 }
+      },
+      "adept": {
+        "requirements": { "totalLevel": 200 }
+      },
+      "master": {
+        "requirements": { "totalLevel": 500 }
+      }
+    }
+  }
+}

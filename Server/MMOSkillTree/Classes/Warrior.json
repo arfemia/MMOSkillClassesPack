@@ -1,0 +1,130 @@
+{
+  "Name": "Warrior",
+  "Payload": {
+    "extends": "classstandard",
+    "params": {
+      "displayName": "Warrior",
+      "flavor": "Steel and discipline.",
+      "description": "A frontline melee fighter. Bonuses to every weapon class except staves and magic; the arcane arts are forbidden, your training was steel not spell.",
+      "icon": "Weapon_Longsword_Iron",
+      "color": "#a04a4a",
+      "initiateName": "Warrior Initiate",
+      "initiateFlavor": "First taste of steel.",
+      "adeptName": "Warrior Adept",
+      "adeptFlavor": "Steady stance, sharp eye.",
+      "masterName": "Warrior Master",
+      "masterFlavor": "The blade is an extension of the will."
+    },
+    "baseGrantsOverrides": {
+      "xpMultipliers": {
+        "SWORDS": 1.25,
+        "AXES": 1.25,
+        "POLEARMS": 1.25,
+        "BLUNT": 1.25,
+        "DEFENSE": 1.15,
+        "UNARMED": 1.10,
+        "MAGIC": 0.5,
+        "ARTILLERY": 0.5,
+        "STAVES": 0.5
+      },
+      "abilityBlacklist": [
+        "fireball",
+        "meteor",
+        "frost_nova",
+        "pyromaniac",
+        "elemental_chain"
+      ],
+      "passiveRewards": [
+        {
+          "id": "warrior_base_dmg",
+          "type": "FLAT_DAMAGE",
+          "value": 3,
+          "displayName": "Warrior's Edge",
+          "description": "+3 damage on melee weapons"
+        },
+        {
+          "id": "warrior_base_hp",
+          "type": "STAT_HEALTH",
+          "value": 10,
+          "displayName": "Warrior's Vitality",
+          "description": "+10 max HP"
+        }
+      ],
+      "startingItems": {
+        "Weapon_Longsword_Iron": 1,
+        "Armor_Iron_Head": 1
+      }
+    },
+    "advancementOverrides": {
+      "initiate": {
+        "requirements": { "totalLevel": 50 },
+        "grants": {
+          "passiveRewards": [
+            {
+              "id": "warrior_initiate_dmg",
+              "type": "FLAT_DAMAGE",
+              "value": 2,
+              "displayName": "Initiate's Strength",
+              "description": "+2 damage on melee weapons"
+            }
+          ]
+        }
+      },
+      "adept": {
+        "requirements": {
+          "mode": "AND",
+          "totalLevel": 150,
+          "skillLevels": [
+            { "skill": "SWORDS", "level": 30 }
+          ]
+        },
+        "grants": {
+          "passiveRewards": [
+            {
+              "id": "warrior_adept_dmg",
+              "type": "FLAT_DAMAGE",
+              "value": 3,
+              "displayName": "Adept's Edge",
+              "description": "+3 damage on melee weapons"
+            },
+            {
+              "id": "warrior_adept_hp",
+              "type": "STAT_HEALTH",
+              "value": 15,
+              "displayName": "Adept's Vitality",
+              "description": "+15 max HP"
+            }
+          ]
+        }
+      },
+      "master": {
+        "requirements": {
+          "mode": "AND",
+          "totalLevel": 300,
+          "skillLevels": [
+            { "skill": "SWORDS", "level": 60 },
+            { "skill": "DEFENSE", "level": 40 }
+          ]
+        },
+        "grants": {
+          "passiveRewards": [
+            {
+              "id": "warrior_master_dmg",
+              "type": "FLAT_DAMAGE",
+              "value": 5,
+              "displayName": "Master's Might",
+              "description": "+5 damage on melee weapons"
+            },
+            {
+              "id": "warrior_master_hp",
+              "type": "STAT_HEALTH",
+              "value": 25,
+              "displayName": "Master's Endurance",
+              "description": "+25 max HP"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

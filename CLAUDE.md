@@ -1,6 +1,6 @@
 # CLAUDE.md — MMOSkillClassesPack
 
-This directory is **a standalone Hytale content pack** that ships as its own mod on CurseForge alongside the [MMOSkillTree mod](https://www.curseforge.com/hytale/mmoskilltree). The plugin's `ClassesConfig` ships no built-in classes; without this pack (or another class pack), the class system is fully dormant — every UI/command/hook routes to identity behavior, preserving byte-for-byte 1.1.7 behavior.
+This directory is **a standalone Hytale content pack** that ships as its own mod on CurseForge alongside the [MMOSkillTree mod](https://www.curseforge.com/hytale/mods/mmo-skill-tree). The plugin's `ClassesConfig` ships no built-in classes; without this pack (or another class pack), the class system is fully dormant — every UI/command/hook routes to identity behavior, preserving byte-for-byte 1.1.7 behavior.
 
 ## Layout
 

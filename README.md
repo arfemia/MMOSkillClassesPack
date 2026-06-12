@@ -1,6 +1,6 @@
 # MMOSkillClassesPack
 
-Three free baseline classes for the [MMO Skill Tree](https://www.curseforge.com/hytale/mmoskilltree) mod (1.2.0+).
+Three free baseline classes for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.2.0+).
 
 ## Classes
 
@@ -12,7 +12,7 @@ Each class has three advancement ranks (Initiate / Adept / Master) gated by tota
 
 ## Install
 
-1. Install the [MMO Skill Tree](https://www.curseforge.com/hytale/mmoskilltree) mod 1.2.0+.
+1. Install the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod 1.2.0+.
 2. Drop `MMOSkillClassesPack.zip` into your Hytale mods folder.
 3. Start the server. The class system activates on first load.
 4. Players use `/mmoclass list` and `/mmoclass select --id=<classId>` to pick a class.

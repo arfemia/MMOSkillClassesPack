@@ -1,9 +1,6 @@
 {
   "Name": "ClassStandard",
   "Payload": {
-    "displayName": "{{displayName}}",
-    "flavor": "{{flavor}}",
-    "description": "{{description}}",
     "icon": "{{icon}}",
     "color": "{{color}}",
     "baseGrants": {
@@ -22,22 +19,16 @@
     "advancements": [
       {
         "id": "initiate",
-        "displayName": "{{initiateName}}",
-        "flavor": "{{initiateFlavor}}",
         "requirements": {},
         "grants": {}
       },
       {
         "id": "adept",
-        "displayName": "{{adeptName}}",
-        "flavor": "{{adeptFlavor}}",
         "requirements": {},
         "grants": {}
       },
       {
         "id": "master",
-        "displayName": "{{masterName}}",
-        "flavor": "{{masterFlavor}}",
         "requirements": {},
         "grants": {}
       }

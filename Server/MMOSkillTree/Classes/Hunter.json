@@ -3,25 +3,16 @@
   "Payload": {
     "extends": "classstandard",
     "params": {
-      "displayName": "Hunter",
-      "flavor": "Patient. Precise. Lethal.",
-      "description": "A tracker and finisher. Bow and dagger primary, with strong gathering ties to woodcutting and harvesting. Staves and magic are foreign to the hunter's craft.",
       "icon": "Weapon_Shortbow_Iron",
-      "color": "#8a6a4a",
-      "initiateName": "Hunter Initiate",
-      "initiateFlavor": "You've learned to wait.",
-      "adeptName": "Hunter Adept",
-      "adeptFlavor": "Every shot is chosen.",
-      "masterName": "Master Hunter",
-      "masterFlavor": "Nothing moves unseen."
+      "color": "#8a6a4a"
     },
     "baseGrantsOverrides": {
       "xpMultipliers": {
-        "ARCHERY": 1.30,
+        "ARCHERY": 1.3,
         "DAGGERS": 1.15,
-        "WOODCUTTING": 1.20,
-        "HARVESTING": 1.20,
-        "ACROBATICS": 1.10,
+        "WOODCUTTING": 1.2,
+        "HARVESTING": 1.2,
+        "ACROBATICS": 1.1,
         "MAGIC": 0.5,
         "STAVES": 0.5,
         "BLUNT": 0.75,
@@ -40,17 +31,13 @@
         {
           "id": "hunter_base_crit",
           "type": "CRITICAL_CHANCE",
-          "value": 0.05,
-          "displayName": "Hunter's Eye",
-          "description": "+5% critical chance"
+          "value": 0.05
         },
         {
           "id": "hunter_base_archery_dmg",
           "type": "FLAT_DAMAGE",
           "value": 2,
-          "displayName": "Sharp Arrows",
-          "customCombatTargetId": "ARCHERY",
-          "description": "+2 damage on archery hits"
+          "customCombatTargetId": "ARCHERY"
         }
       ],
       "startingItems": {
@@ -61,16 +48,16 @@
     },
     "advancementOverrides": {
       "initiate": {
-        "requirements": { "totalLevel": 50 },
+        "requirements": {
+          "totalLevel": 50
+        },
         "grants": {
           "passiveRewards": [
             {
               "id": "hunter_init_archery_dmg",
               "type": "FLAT_DAMAGE",
               "value": 2,
-              "displayName": "Initiate's Precision",
-              "customCombatTargetId": "ARCHERY",
-              "description": "+2 damage on archery hits"
+              "customCombatTargetId": "ARCHERY"
             }
           ]
         }
@@ -80,7 +67,10 @@
           "mode": "AND",
           "totalLevel": 150,
           "skillLevels": [
-            { "skill": "ARCHERY", "level": 30 }
+            {
+              "skill": "ARCHERY",
+              "level": 30
+            }
           ]
         },
         "grants": {
@@ -89,16 +79,12 @@
               "id": "hunter_adept_archery_dmg",
               "type": "FLAT_DAMAGE",
               "value": 3,
-              "displayName": "Adept's Precision",
-              "customCombatTargetId": "ARCHERY",
-              "description": "+3 damage on archery hits"
+              "customCombatTargetId": "ARCHERY"
             },
             {
               "id": "hunter_adept_stam",
               "type": "STAT_STAMINA",
-              "value": 15,
-              "displayName": "Hunter's Endurance",
-              "description": "+15 max stamina"
+              "value": 15
             }
           ]
         }
@@ -108,8 +94,14 @@
           "mode": "AND",
           "totalLevel": 300,
           "skillLevels": [
-            { "skill": "ARCHERY", "level": 60 },
-            { "skill": "DAGGERS", "level": 40 }
+            {
+              "skill": "ARCHERY",
+              "level": 60
+            },
+            {
+              "skill": "DAGGERS",
+              "level": 40
+            }
           ]
         },
         "grants": {
@@ -117,18 +109,14 @@
             {
               "id": "hunter_master_crit",
               "type": "CRITICAL_CHANCE",
-              "value": 0.05,
-              "displayName": "Master's Eye",
-              "description": "+5% critical chance"
+              "value": 0.05
             },
             {
               "id": "hunter_master_dagger_exec",
               "type": "FLAT_DAMAGE",
               "value": 6,
-              "displayName": "Master's Finisher",
               "customCombatTargetId": "DAGGERS",
-              "targetHpRangeMax": 0.25,
-              "description": "+6 damage with daggers on targets below 25% HP"
+              "targetHpRangeMax": 0.25
             }
           ]
         }

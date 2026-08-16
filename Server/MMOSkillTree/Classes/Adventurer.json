@@ -9,17 +9,35 @@
     "advancementOverrides": {
       "initiate": {
         "requirements": {
-          "totalLevel": 50
+          "Factors": [
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 50
+            }
+          ]
         }
       },
       "adept": {
         "requirements": {
-          "totalLevel": 200
+          "Factors": [
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 200
+            }
+          ]
         }
       },
       "master": {
         "requirements": {
-          "totalLevel": 500
+          "Factors": [
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 500
+            }
+          ]
         }
       }
     }

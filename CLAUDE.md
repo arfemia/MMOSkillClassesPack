@@ -53,7 +53,7 @@ Inner Payload fields (all optional unless noted):
 | `flavor` | string | short tagline |
 | `description` | string | longer copy |
 | `icon` | string | Hytale item id used as the class icon |
-| `unlockRequirements` | PrerequisiteGroup | gate selection — quests, skill levels, total level, achievements, currency, etc. Empty = freely selectable. |
+| `unlockRequirements` | Requires block | gate selection. The shared `Requires` block: `Factors` numeric bounds (a skill level is `{"Factor":"hytale:stat","Param":"MMO_Level_<SKILL>","Min":n}`, a total `MMO_TotalLevel`, a mastery node `{"Factor":"mmoskilltree:mastery_node","Param":"<track>:<node>","Min":1}`), plus `Permission`, `Quests`, and the `AllOf` / `AnyOf` / `Not` groups. Empty = freely selectable. |
 | `switchPolicy` | SwitchPolicy | per-class override of the global switch policy (cost, cooldown, escalation, permanent lock). null = use ClassesConfig.getGlobalSwitchPolicy(). |
 | `baseGrants` | ClassGrants | applied while this class is selected (see below) |
 | `advancements` | array of `ClassAdvancement` | additive ranks unlocked by meeting prereqs |
@@ -77,7 +77,7 @@ Inner Payload fields (all optional unless noted):
 |-------|------|-------|
 | `id` | string (required) | stable identifier — used as both the deep-merge key and the persisted unlock record. |
 | `displayName` / `flavor` / `icon` | string | UI surface. |
-| `requirements` | PrerequisiteGroup | when this rank unlocks. Same shape used by quests + mastery. |
+| `requirements` | Requires block | when this rank unlocks. The same block quests, mastery and storefront offers are gated by. |
 | `grants` | ClassGrants | additive over baseGrants + prior advancements. |
 
 **SwitchPolicy**:

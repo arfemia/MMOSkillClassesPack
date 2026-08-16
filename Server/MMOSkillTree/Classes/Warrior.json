@@ -45,7 +45,13 @@
     "advancementOverrides": {
       "initiate": {
         "requirements": {
-          "totalLevel": 50
+          "Factors": [
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 50
+            }
+          ]
         },
         "grants": {
           "passiveRewards": [
@@ -59,12 +65,16 @@
       },
       "adept": {
         "requirements": {
-          "mode": "AND",
-          "totalLevel": 150,
-          "skillLevels": [
+          "Factors": [
             {
-              "skill": "SWORDS",
-              "level": 30
+              "Factor": "hytale:stat",
+              "Param": "MMO_Level_SWORDS",
+              "Min": 30
+            },
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 150
             }
           ]
         },
@@ -85,16 +95,21 @@
       },
       "master": {
         "requirements": {
-          "mode": "AND",
-          "totalLevel": 300,
-          "skillLevels": [
+          "Factors": [
             {
-              "skill": "SWORDS",
-              "level": 60
+              "Factor": "hytale:stat",
+              "Param": "MMO_Level_SWORDS",
+              "Min": 60
             },
             {
-              "skill": "DEFENSE",
-              "level": 40
+              "Factor": "hytale:stat",
+              "Param": "MMO_Level_DEFENSE",
+              "Min": 40
+            },
+            {
+              "Factor": "hytale:stat",
+              "Param": "MMO_TotalLevel",
+              "Min": 300
             }
           ]
         },

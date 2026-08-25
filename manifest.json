@@ -9,10 +9,9 @@
     }
   ],
   "Website": "https://mmo-skill-tree-docs.ziggfreed.com/",
-  "ServerVersion": ">=0.5.0-pre.0 <0.6.0",
+  "ServerVersion": ">=0.6.0-pre.13 <0.7.0",
   "IncludesAssetPack": true,
-  "Dependencies": {},
-  "OptionalDependencies": {
-    "Ziggfreed:MMOSkillTree": "^1.2.0"
+  "Dependencies": {
+    "Ziggfreed:MMOSkillTree": "^1.6.0"
   }
 }

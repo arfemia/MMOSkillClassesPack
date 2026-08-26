@@ -1,132 +1,126 @@
 {
-  "Name": "Warrior",
-  "Payload": {
-    "extends": "classstandard",
-    "params": {
-      "icon": "Weapon_Longsword_Iron",
-      "color": "#a04a4a"
+  "Icon": "Weapon_Longsword_Iron",
+  "Color": "#a04a4a",
+  "Grants": {
+    "XpMultipliers": {
+      "SWORDS": 1.25,
+      "AXES": 1.25,
+      "POLEARMS": 1.25,
+      "BLUNT": 1.25,
+      "DEFENSE": 1.15,
+      "UNARMED": 1.1,
+      "MAGIC": 0.5,
+      "ARTILLERY": 0.5,
+      "STAVES": 0.5
     },
-    "baseGrantsOverrides": {
-      "xpMultipliers": {
-        "SWORDS": 1.25,
-        "AXES": 1.25,
-        "POLEARMS": 1.25,
-        "BLUNT": 1.25,
-        "DEFENSE": 1.15,
-        "UNARMED": 1.1,
-        "MAGIC": 0.5,
-        "ARTILLERY": 0.5,
-        "STAVES": 0.5
+    "AbilityBlacklist": [
+      "fireball",
+      "meteor",
+      "frost_nova",
+      "pyromaniac",
+      "elemental_chain"
+    ],
+    "PassiveRewards": [
+      {
+        "id": "warrior_base_dmg",
+        "type": "FLAT_DAMAGE",
+        "value": 3
       },
-      "abilityBlacklist": [
-        "fireball",
-        "meteor",
-        "frost_nova",
-        "pyromaniac",
-        "elemental_chain"
-      ],
-      "passiveRewards": [
-        {
-          "id": "warrior_base_dmg",
-          "type": "FLAT_DAMAGE",
-          "value": 3
-        },
-        {
-          "id": "warrior_base_hp",
-          "type": "STAT_HEALTH",
-          "value": 10
-        }
-      ],
-      "startingItems": {
-        "Weapon_Longsword_Iron": 1,
-        "Armor_Iron_Head": 1
+      {
+        "id": "warrior_base_hp",
+        "type": "STAT_HEALTH",
+        "value": 10
+      }
+    ],
+    "StartingItems": {
+      "Weapon_Longsword_Iron": 1,
+      "Armor_Iron_Head": 1
+    }
+  },
+  "Advancements": {
+    "initiate": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 50
+          }
+        ]
+      },
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "warrior_initiate_dmg",
+            "type": "FLAT_DAMAGE",
+            "value": 2
+          }
+        ]
       }
     },
-    "advancementOverrides": {
-      "initiate": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 50
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "warrior_initiate_dmg",
-              "type": "FLAT_DAMAGE",
-              "value": 2
-            }
-          ]
-        }
+    "adept": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_SWORDS",
+            "Min": 30
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 150
+          }
+        ]
       },
-      "adept": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_SWORDS",
-              "Min": 30
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 150
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "warrior_adept_dmg",
-              "type": "FLAT_DAMAGE",
-              "value": 3
-            },
-            {
-              "id": "warrior_adept_hp",
-              "type": "STAT_HEALTH",
-              "value": 15
-            }
-          ]
-        }
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "warrior_adept_dmg",
+            "type": "FLAT_DAMAGE",
+            "value": 3
+          },
+          {
+            "id": "warrior_adept_hp",
+            "type": "STAT_HEALTH",
+            "value": 15
+          }
+        ]
+      }
+    },
+    "master": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_SWORDS",
+            "Min": 60
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_DEFENSE",
+            "Min": 40
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 300
+          }
+        ]
       },
-      "master": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_SWORDS",
-              "Min": 60
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_DEFENSE",
-              "Min": 40
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 300
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "warrior_master_dmg",
-              "type": "FLAT_DAMAGE",
-              "value": 5
-            },
-            {
-              "id": "warrior_master_hp",
-              "type": "STAT_HEALTH",
-              "value": 25
-            }
-          ]
-        }
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "warrior_master_dmg",
+            "type": "FLAT_DAMAGE",
+            "value": 5
+          },
+          {
+            "id": "warrior_master_hp",
+            "type": "STAT_HEALTH",
+            "value": 25
+          }
+        ]
       }
     }
   }

@@ -1,44 +1,38 @@
 {
-  "Name": "Adventurer",
-  "Payload": {
-    "extends": "classstandard",
-    "params": {
-      "icon": "Tool_Hatchet_Crude",
-      "color": "#44cc77"
+  "Icon": "Tool_Hatchet_Crude",
+  "Color": "#44cc77",
+  "Advancements": {
+    "initiate": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 50
+          }
+        ]
+      }
     },
-    "advancementOverrides": {
-      "initiate": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 50
-            }
-          ]
-        }
-      },
-      "adept": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 200
-            }
-          ]
-        }
-      },
-      "master": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 500
-            }
-          ]
-        }
+    "adept": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 200
+          }
+        ]
+      }
+    },
+    "master": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 500
+          }
+        ]
       }
     }
   }

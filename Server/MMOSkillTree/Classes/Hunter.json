@@ -1,140 +1,134 @@
 {
-  "Name": "Hunter",
-  "Payload": {
-    "extends": "classstandard",
-    "params": {
-      "icon": "Weapon_Shortbow_Iron",
-      "color": "#8a6a4a"
+  "Icon": "Weapon_Shortbow_Iron",
+  "Color": "#8a6a4a",
+  "Grants": {
+    "XpMultipliers": {
+      "ARCHERY": 1.3,
+      "DAGGERS": 1.15,
+      "WOODCUTTING": 1.2,
+      "HARVESTING": 1.2,
+      "ACROBATICS": 1.1,
+      "MAGIC": 0.5,
+      "STAVES": 0.5,
+      "BLUNT": 0.75,
+      "POLEARMS": 0.75
     },
-    "baseGrantsOverrides": {
-      "xpMultipliers": {
-        "ARCHERY": 1.3,
-        "DAGGERS": 1.15,
-        "WOODCUTTING": 1.2,
-        "HARVESTING": 1.2,
-        "ACROBATICS": 1.1,
-        "MAGIC": 0.5,
-        "STAVES": 0.5,
-        "BLUNT": 0.75,
-        "POLEARMS": 0.75
+    "AbilityBlacklist": [
+      "fireball",
+      "meteor",
+      "frost_nova",
+      "pyromaniac",
+      "elemental_chain",
+      "manaforge",
+      "arcane_mastery"
+    ],
+    "PassiveRewards": [
+      {
+        "id": "hunter_base_crit",
+        "type": "CRITICAL_CHANCE",
+        "value": 0.05
       },
-      "abilityBlacklist": [
-        "fireball",
-        "meteor",
-        "frost_nova",
-        "pyromaniac",
-        "elemental_chain",
-        "manaforge",
-        "arcane_mastery"
-      ],
-      "passiveRewards": [
-        {
-          "id": "hunter_base_crit",
-          "type": "CRITICAL_CHANCE",
-          "value": 0.05
-        },
-        {
-          "id": "hunter_base_archery_dmg",
-          "type": "FLAT_DAMAGE",
-          "value": 2,
-          "customCombatTargetId": "ARCHERY"
-        }
-      ],
-      "startingItems": {
-        "Weapon_Shortbow_Iron": 1,
-        "Weapon_Daggers_Iron": 1,
-        "Weapon_Arrow_Iron": 16
+      {
+        "id": "hunter_base_archery_dmg",
+        "type": "FLAT_DAMAGE",
+        "value": 2,
+        "customCombatTargetId": "ARCHERY"
+      }
+    ],
+    "StartingItems": {
+      "Weapon_Shortbow_Iron": 1,
+      "Weapon_Daggers_Iron": 1,
+      "Weapon_Arrow_Iron": 16
+    }
+  },
+  "Advancements": {
+    "initiate": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 50
+          }
+        ]
+      },
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "hunter_init_archery_dmg",
+            "type": "FLAT_DAMAGE",
+            "value": 2,
+            "customCombatTargetId": "ARCHERY"
+          }
+        ]
       }
     },
-    "advancementOverrides": {
-      "initiate": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 50
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "hunter_init_archery_dmg",
-              "type": "FLAT_DAMAGE",
-              "value": 2,
-              "customCombatTargetId": "ARCHERY"
-            }
-          ]
-        }
+    "adept": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_ARCHERY",
+            "Min": 30
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 150
+          }
+        ]
       },
-      "adept": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_ARCHERY",
-              "Min": 30
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 150
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "hunter_adept_archery_dmg",
-              "type": "FLAT_DAMAGE",
-              "value": 3,
-              "customCombatTargetId": "ARCHERY"
-            },
-            {
-              "id": "hunter_adept_stam",
-              "type": "STAT_STAMINA",
-              "value": 15
-            }
-          ]
-        }
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "hunter_adept_archery_dmg",
+            "type": "FLAT_DAMAGE",
+            "value": 3,
+            "customCombatTargetId": "ARCHERY"
+          },
+          {
+            "id": "hunter_adept_stam",
+            "type": "STAT_STAMINA",
+            "value": 15
+          }
+        ]
+      }
+    },
+    "master": {
+      "Requires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_ARCHERY",
+            "Min": 60
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_DAGGERS",
+            "Min": 40
+          },
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_TotalLevel",
+            "Min": 300
+          }
+        ]
       },
-      "master": {
-        "requirements": {
-          "Factors": [
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_ARCHERY",
-              "Min": 60
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_Level_DAGGERS",
-              "Min": 40
-            },
-            {
-              "Factor": "hytale:stat",
-              "Param": "MMO_TotalLevel",
-              "Min": 300
-            }
-          ]
-        },
-        "grants": {
-          "passiveRewards": [
-            {
-              "id": "hunter_master_crit",
-              "type": "CRITICAL_CHANCE",
-              "value": 0.05
-            },
-            {
-              "id": "hunter_master_dagger_exec",
-              "type": "FLAT_DAMAGE",
-              "value": 6,
-              "customCombatTargetId": "DAGGERS",
-              "targetHpRangeMax": 0.25
-            }
-          ]
-        }
+      "Grants": {
+        "PassiveRewards": [
+          {
+            "id": "hunter_master_crit",
+            "type": "CRITICAL_CHANCE",
+            "value": 0.05
+          },
+          {
+            "id": "hunter_master_dagger_exec",
+            "type": "FLAT_DAMAGE",
+            "value": 6,
+            "customCombatTargetId": "DAGGERS",
+            "targetHpRangeMax": 0.25
+          }
+        ]
       }
     }
   }

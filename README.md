@@ -1,23 +1,23 @@
 # MMOSkillClassesPack
 
-Three free baseline classes for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.2.0+).
+Three free baseline classes for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.0+).
 
 ## Classes
 
-- **Adventurer** — the classless default. No restrictions, no bonuses. Pick this if you want the pre-class experience.
-- **Warrior** — frontline melee. Bonuses on melee weapons + defense; magic and artillery locked down.
-- **Hunter** — bow + dagger + nature. Critical-chance and archery damage focus; staves and most magic locked.
+- **Adventurer** - the classless default. No restrictions, no bonuses. Pick this if you want the pre-class experience.
+- **Warrior** - frontline melee. Bonuses on melee weapons + defense; magic and artillery locked down.
+- **Hunter** - bow + dagger + nature. Critical-chance and archery damage focus; staves and most magic locked.
 
 Each class has three advancement ranks (Initiate / Adept / Master) gated by total level and key skill thresholds. Reaching an advancement grants additional passive rewards.
 
 ## Install
 
-1. Install the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod 1.2.0+.
+1. Install the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod 1.6.0+.
 2. Drop `MMOSkillClassesPack.zip` into your Hytale mods folder.
 3. Start the server. The class system activates on first load.
 4. Players use `/mmoclass list` and `/mmoclass select --id=<classId>` to pick a class.
 
-Without this pack the class system stays dormant; the mod behaves exactly as 1.1.7.
+Without this pack the class system stays dormant; the mod behaves exactly as it does with no class system at all.
 
 ## Build (from source)
 

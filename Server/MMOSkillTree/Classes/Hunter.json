@@ -13,15 +13,17 @@
       "BLUNT": 0.75,
       "POLEARMS": 0.75
     },
-    "AbilityBlacklist": [
-      "fireball",
-      "meteor",
-      "frost_nova",
-      "pyromaniac",
-      "elemental_chain",
-      "manaforge",
-      "arcane_mastery"
-    ],
+    "Abilities": {
+      "Deny": [
+        "fireball",
+        "meteor",
+        "frost_nova",
+        "magic_passive_pyromaniac",
+        "arcane_missiles",
+        "flame_stream",
+        "magic_capstone_arcane_resonance"
+      ]
+    },
     "PassiveRewards": [
       {
         "id": "hunter_base_crit",

@@ -52,9 +52,9 @@ Top-level fields (all optional; display text is localization keys by convention 
 | Field | Type | Notes |
 |-------|------|-------|
 | `XpMultipliers` | map<skill, double> | `0.0` = no XP gain; `1.25` = +25%; `1.0` = unchanged. Skill ids uppercased. |
-| `AbilityWhitelist` / `AbilityBlacklist` | array<abilityId> | empty whitelist = no gate. Blacklist always wins. |
-| `MasteryWhitelist` / `MasteryBlacklist` | array<trackId or "trackId:nodeId"> | gates mastery purchases. |
-| `SkillRewardWhitelist` / `SkillRewardBlacklist` | array<rewardId> | gates skill-tree reward claims. |
+| `Abilities` | group `{Allow, Deny}` | both are arrays of ability ids, lowercase. Empty/absent `Allow` = no gate. `Deny` always wins. |
+| `Mastery` | group `{Allow, Deny}` | both are arrays of `trackId` or `"trackId:nodeId"`; gates mastery purchases the same way. |
+| `SkillRewards` | group `{Allow, Deny}` | both are arrays of reward ids; gates skill-tree reward claims the same way. |
 | `PassiveRewards` | array | entries in the skill-tree reward shape (`{"id", "type", "value"}` plus optional `combatTarget` / `customCombatTargetId` / HP-range fields); combat-typed entries plug into the per-hit FLAT_DAMAGE / FLAT_LIFESTEAL / FLAT_COMBO_DAMAGE aggregators; STAT_HEALTH / STAT_STAMINA / STAT_MANA apply as max-stat modifiers. |
 | `StartingItems` | map<itemId, count> | handed over on every selection of this class, a switch back to it included. Only the class-level block is delivered; an advancement's `StartingItems` is not. |
 | `StartingMasteryNodes` | array<"trackId:nodeId"> | decoded and merged into the class grants, but nothing grants the nodes yet - authoring it has no effect in play. |

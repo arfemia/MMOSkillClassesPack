@@ -13,13 +13,15 @@
       "ARTILLERY": 0.5,
       "STAVES": 0.5
     },
-    "AbilityBlacklist": [
-      "fireball",
-      "meteor",
-      "frost_nova",
-      "pyromaniac",
-      "elemental_chain"
-    ],
+    "Abilities": {
+      "Deny": [
+        "fireball",
+        "meteor",
+        "frost_nova",
+        "magic_passive_pyromaniac",
+        "arcane_missiles"
+      ]
+    },
     "PassiveRewards": [
       {
         "id": "warrior_base_dmg",

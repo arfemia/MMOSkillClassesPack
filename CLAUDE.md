@@ -7,12 +7,15 @@ This directory is **a standalone Hytale content pack** that ships as its own mod
 ```
 skill-classes-pack/
 ├── manifest.json                                Hytale plugin manifest
+├── build.ps1                                    zip + optional install (see below)
 ├── CLAUDE.md                                    this file
+├── CHANGELOG.md                                 per-version pack changelog
 ├── README.md                                    end-user installation notes
 ├── MMOSkillClassesPack.zip                      built artifact
 └── Server/
-    └── MMOSkillTree/
-        └── Classes/*.json                       3 classes (Adventurer, Warrior, Hunter), structured
+    ├── MMOSkillTree/
+    │   └── Classes/*.json                       3 classes (Adventurer, Warrior, Hunter), structured
+    └── Languages/<bcp47>/mmoskilltree.lang      class + advancement display text, 9 locales
 ```
 
 ## Build & deploy
@@ -53,9 +56,9 @@ Top-level fields (all optional; display text is localization keys by convention 
 | `MasteryWhitelist` / `MasteryBlacklist` | array<trackId or "trackId:nodeId"> | gates mastery purchases. |
 | `SkillRewardWhitelist` / `SkillRewardBlacklist` | array<rewardId> | gates skill-tree reward claims. |
 | `PassiveRewards` | array | entries in the skill-tree reward shape (`{"id", "type", "value"}` plus optional `combatTarget` / `customCombatTargetId` / HP-range fields); combat-typed entries plug into the per-hit FLAT_DAMAGE / FLAT_LIFESTEAL / FLAT_COMBO_DAMAGE aggregators; STAT_HEALTH / STAT_STAMINA / STAT_MANA apply as max-stat modifiers. |
-| `StartingItems` | map<itemId, count> | given once on class selection (not on every switch). |
-| `StartingMasteryNodes` | array<"trackId:nodeId"> | auto-granted on selection. |
-| `ClassQuests` | array<questId> | unlocked while this class is active. |
+| `StartingItems` | map<itemId, count> | handed over on every selection of this class, a switch back to it included. Only the class-level block is delivered; an advancement's `StartingItems` is not. |
+| `StartingMasteryNodes` | array<"trackId:nodeId"> | decoded and merged into the class grants, but nothing grants the nodes yet - authoring it has no effect in play. |
+| `ClassQuests` | array<questId> | decoded and merged into the class grants, but no quest-availability path reads it yet - authoring it has no effect in play. |
 
 **`Advancements` entry**:
 

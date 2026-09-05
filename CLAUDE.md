@@ -82,7 +82,7 @@ Top-level fields (all optional; display text is localization keys by convention 
 
 The pack and the plugin co-evolve:
 
-- If the plugin adds a new `RewardType` referenced in `PassiveRewards`, re-emit any affected class JSON here.
+- If the plugin adds a new `SkillRewardType` constant worth using in `PassiveRewards`, re-emit any affected class JSON here.
 - If the plugin extends the class schema (`ClassDefinitionAsset`), update `ClassesConfig.SCHEMA_VERSION` there and document the migration in the plugin CHANGELOG.
 
 ## Verification

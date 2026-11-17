@@ -41,7 +41,7 @@ All fields are optional.
 | `Enabled` | bool | Unwritten means true; `false` parks the class. |
 | `Icon` | string | A Hytale item id used as the class icon. |
 | `Color` | string | Hex accent for the class screens, such as `#a04a4a`. |
-| `Requires` | requirement block | Gates selecting the class. It is the same block quests and mastery use: `Factors` are numeric bounds (a skill level is `{"Factor": "hytale:stat", "Param": "MMO_Level_<SKILL>", "Min": n}`, the total is `MMO_TotalLevel`, a mastery node is `{"Factor": "mmoskilltree:mastery_node", "Param": "<track>:<node>", "Min": 1}`), plus `Permission`, `Quests`, and `AllOf` / `AnyOf` / `Not`. Unwritten means anyone can pick it. |
+| `Requires` | requirement block | Gates selecting the class. It is the same block quests and mastery use: `Factors` are numeric bounds (a skill level is `{"Factor": "hytale:stat", "Param": "Level_<Skill>", "Min": n}`, the total is `TotalLevel`, a mastery node is `{"Factor": "mmoskilltree:mastery_node", "Param": "<track>:<node>", "Min": 1}`), plus `Permission`, `Quests`, and `AllOf` / `AnyOf` / `Not`. Unwritten means anyone can pick it. |
 | `SwitchPolicy` | group | Overrides the server's switch policy for this class (see below). |
 | `Grants` | group | Applied while this class is selected (see below). |
 | `Advancements` | map | Rank id to advancement, in unlock order. A rank id is what a player's unlocks are saved under, so renaming one orphans everybody who reached it. |
@@ -67,7 +67,7 @@ Each entry under `Advancements` takes `Icon`, `Requires` (when the rank unlocks)
 
 ```json
 "Advancements": {
-  "initiate": { "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_TotalLevel", "Min": 50 } ] },
+  "initiate": { "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "TotalLevel", "Min": 50 } ] },
                 "Grants": { "PassiveRewards": [ { "id": "warrior_initiate_dmg", "type": "FLAT_DAMAGE", "value": 2 } ] } } }
 ```
 

@@ -45,7 +45,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 50
           }
         ]
@@ -65,12 +65,12 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_SWORDS",
+            "Param": "Level_Swords",
             "Min": 30
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 150
           }
         ]
@@ -95,17 +95,17 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_SWORDS",
+            "Param": "Level_Swords",
             "Min": 60
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_DEFENSE",
+            "Param": "Level_Defense",
             "Min": 40
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 300
           }
         ]

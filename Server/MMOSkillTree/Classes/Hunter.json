@@ -49,7 +49,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 50
           }
         ]
@@ -70,12 +70,12 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_ARCHERY",
+            "Param": "Level_Archery",
             "Min": 30
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 150
           }
         ]
@@ -101,17 +101,17 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_ARCHERY",
+            "Param": "Level_Archery",
             "Min": 60
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_DAGGERS",
+            "Param": "Level_Daggers",
             "Min": 40
           },
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 300
           }
         ]

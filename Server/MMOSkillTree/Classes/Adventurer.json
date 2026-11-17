@@ -7,7 +7,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 50
           }
         ]
@@ -18,7 +18,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 200
           }
         ]
@@ -29,7 +29,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_TotalLevel",
+            "Param": "TotalLevel",
             "Min": 500
           }
         ]
